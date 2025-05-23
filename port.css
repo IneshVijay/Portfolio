@@ -1,5 +1,7 @@
 /*For Main site*/
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -34,6 +36,7 @@ header {
   color: #0073b1;
   font-weight: 600;
   transition: color 0.3s ease;
+  position: sticky;
 }
 
 .navbar a:hover {
@@ -134,4 +137,5 @@ header {
     color: #555;
     line-height: 1.6;
 }
+
 
