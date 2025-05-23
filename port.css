@@ -1,0 +1,137 @@
+/*For Main site*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgb(100, 100, 100);
+}
+
+.Hero {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.Hero img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    object-position: center;
+}
+
+.navbar a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #0073b1;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #005580;
+  text-decoration: underline;
+}
+
+/*For Projects*/
+
+.Projects {
+    font-family: Arial, sans-serif;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.project-list {
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+}
+
+.project-card {
+    background: white;
+    width: 200px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.project-card :hover {
+    transition: translateY(-6px);
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.project-card p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.project-card a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #0073b1;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+    color: #005580;
+    text-decoration: underline;
+}
+
+/*For contact*/
+.contact {
+    padding: 40px;
+    text-align: center;
+    background-color: #eaeaea;
+}
+
+.contact a {
+    color: #0073b1;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact a:hover {
+    color: #005580;
+    text-decoration: underline;
+}
+
+/*For about*/
+.About {
+    max-width: 850px;
+    margin: 50px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.About h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.About p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
