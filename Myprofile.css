@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.Card {
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgb(37, 37, 37);
+}
+
+.profilepic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.title {
+    color: grey;
+}
+
+.Socials a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0073b1;
+    font-weight: bold;
+}
+
+.Socials a:hover {
+    text-decoration: underline;
+}
