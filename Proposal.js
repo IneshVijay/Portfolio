@@ -25,3 +25,6 @@ function handleNoClick() {
 function handleYesClick() {
     window.location.href = "yes_page.html";
 }
+function goback() {
+    window.history.back();
+}
