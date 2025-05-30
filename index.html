@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Personal Webpage - Inesh Vijayvergiya</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" href="Code and the Central 'I'.png" type="image/png">
+</head>
+<body>
+    <header class="header">
+        <h1>Welcome to my personal webpage!</h1>
+    </header>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a software developer with a passion for creating innovative solutions. I enjoy working on web applications and exploring new technologies.</p>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>If you would like to get in touch or hire, feel free to reach out via email at <a href="mailto:ineshvijay.work@gmail.com">ineshvijay.work@gmail.com</a>.</p>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>A user-friendly To-Do List app built with HTML, CSS, and JavaScript, featuring task addition, completion, and deletion functionalities.</p>
+                    <a href="Todolist.html">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>A simple calculator app built with HTML, CSS, and JavaScript, allowing users to perform basic arithmetic operations.</p>
+                    <a href="Calculator.html">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 3</h3>
+                    <p>A counter app built with HTML, CSS, and JavaScript, allowing users to increment, decrement, and reset a counter value.</p>
+                    <a href="counter.html">View Project</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+    <p>© 2025 Inesh Vijayvergiya | Follow me on: 
+        <a href="https://x.com/Inesh_codes?t=GTnJPJFWzOIl6B_2CbzSmA&s=09" target="_blank" style="color: #1da1f2; text-decoration: none;">
+            <i class="fab fa-twitter" style="margin-right: 5px;"></i>Twitter
+        </a> | 
+        <a href="https://www.linkedin.com/in/inesh-vijay-00938a367" target="_blank" style="color: #0e76a8; text-decoration: none;">
+            <i class="fab fa-linkedin" style="margin-right: 5px;"></i>LinkedIn
+        </a>
+    </p>
+</footer>
+ <script>
+    // Smooth scrolling for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+ </script>
+</body>
+</html>

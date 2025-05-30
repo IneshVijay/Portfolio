@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            color: #333;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        #counterlabel {
+            display: block;
+            text-align: center;
+            font-size: 2em;
+            margin: 20px 0;
+            font-family: helvetica;
+            color: #007BFF;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        #increasebtn, #decreasebtn, #resetbtn {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 1em;
+            font-family: helvetica;
+            color: #007BFF;
+            background-color: #fafafa;
+            border: 2px solid #007BFF;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        #increasebtn:hover, #decreasebtn:hover, #resetbtn:hover {
+            background-color: #007BFF;
+            color: white;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .box {
+            width: 400px;
+            margin: 10px auto;
+            padding: 20px;
+            border: #007BFF 2px solid;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #f8f9fa;
+        }
+        .back-button {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .back-button:hover {
+        background-color: #45a049;
+        transform: scale(1.05);
+        }
+
+        .back-button:active {
+        background-color: #3e8e41;
+        transform: scale(0.95);
+        }
+    </style>
+</head>
+<body> 
+    
+    <button class="back-button" onclick="goBack()">← Back</button>
+
+    <h1>Counter</h1>
+    <main class="box">
+    <label id="counterlabel">0</label>
+    <div class="buttons">
+        <button id="decreasebtn">Decrease</button>               
+        <button id="resetbtn">Reset</button>
+        <button id="increasebtn">Increase</button>
+    </div>
+    </main>
+    <script>
+        const increasebtn = document.getElementById('increasebtn');
+        const decreasebtn = document.getElementById('decreasebtn');
+        const resetbtn = document.getElementById('resetbtn');
+        const counterlabel = document.getElementById('counterlabel');
+
+        let count = 0;
+
+        decreasebtn.onclick = function() {
+            count--;
+            counterlabel.textContent = count;
+        }
+
+        increasebtn.onclick = function() {
+            count++;
+            counterlabel.textContent = count;
+        }
+
+        resetbtn.onclick = function() {
+            count = 0;
+            counterlabel.textContent = count;
+        }
+        function goBack() {
+            window.history.back();
+
+        }
+    </script>
+</body>
+</html>
